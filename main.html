@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        
+        <h1>Dashbord</h1>
+
+    </div>
+    <div class="container">
+        <div class="form_tag">
+            <button type="button" class="btn" onclick="addInfo()">Add A New Row</button>
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Student Roll</th>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Marked By</th>
+                            <th>Save</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tr">
+                            <td id ="incre"></td>
+                            <td><input type="text" id="name"></td>
+                            <td><input type="number" name="" id="roll"></td>
+                            <td><input type="text" name="" id="Subject"></td>
+                            <td><input type="number" name="" id="marks"></td>
+                            <td><input type="email" name="" id="email"></td>
+                            <td><input type="button" value="SAVE" id="save" onclick="storeData()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+            <h1 id="h1tag" style="color: red;"></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
